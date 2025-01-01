@@ -34,7 +34,7 @@ session_start();
                             echo "
                            
                               <li class='nav-item'>
-                            <button type='button' class='btn btn-secondary' role='button'><a href='/../../app/pages/crud/addDesigns.php' >Catalog</a></button>
+                            <button  class='btn btn-catalog' role='button'><a href='/../../app/pages/crud/addDesigns.php' >Catalog</a></button>
                             </li>
 
                             <li class='nav-item'>

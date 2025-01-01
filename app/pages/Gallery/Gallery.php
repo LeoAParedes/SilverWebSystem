@@ -2,10 +2,10 @@
 <html lang="en">
 
 <?php
-    include_once("headerinside.php");
+    include_once("../../header.php");
    
 ?>
-<header class="text-white text-center py-5 masthead">
+<header class="text-white text-center py-5 masthead" id="gallery">
        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
        <div class="d-flex justify-content-center"> 
        <div class="text-center" >
@@ -19,93 +19,16 @@
 </header>
 
 <section>
-<div class="text-white text-center py-5 masthead2">
-       <div class="container px-4 px-lg-5 d-flex h-200 align-items-center align-content-center flex-fill">
-       <div class="d-flex justify-content-center"> 
-       <div class="text-center" >
-       <div class="container  px-6 px-lg-4 container-gallery">
-                
-       <div class="col-md-12 mb-5 mt-5 mb-md-0  ">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                
-                            <table class="table table-bordered w-80 h-100">
-        <thead>
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-                <th>Column 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="td-title pad">
-                <td rowspan="2" class="td-image pad "><img src="/../../app/assets/img/png%20delta%20color.png" class="img-gallery " ></td>
-                <td  class="td-text h1  text-center  align-items-center align-content-center">DeltaPrism</td>
-                <td >Row 1, Cell 3</td>
-            </tr>
-            <tr class="td-desc">
-                
-                <td class="td-text h4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, 
-                    sed dictum elit finibus sit amet. Etiam nec urna rutrum augue
-                     porta ullamcorper a ac sapien. Vestibulum ante ipsum primis in faucibus 
-                     orci luctus et ultrices posuere cubilia curaeNam dapibus, 
-                     lorem posuere porta luctus, elit turpis iaculis libero, at 
-                     fermentum sapien enim quis sem. Vivamus in scelerisque sapien, 
-                     ac lobortis risus. Vivamus sodales justo sapien, ut pellentesque
-                      lacus faucibus nec. In egestas, arcu nec rhoncus faucibus, magna 
-                      augue bibendum nisl, quis lobortis purus nisl sit amet leo. Praesent 
-                      eu vestibulum sem, ut lobortis risus. Aenean porta sem eu finibus 
-                      sodales. Cras posuere molestie aliquam. Nulla non dui tristique, 
-                      semper nisl id, blandit felis. Curabitur consequat mattis diam, ut consequat mi pellentesque ac. 
-                     Mauris rutrum dapibus magna a vehicula. Donec suscipit nisi quis tellus molestie dignissim.</td>
-                <td>Row 2, Cell 3</td>
-            </tr>
-            <tr>
-                <td>Row 3, Cell 1</td>
-                <td>Row 3, Cell 2</td>
-                <td>Row 3, Cell 3</td>
-            </tr>
-            <tr>
-                <td>Row 4, Cell 1</td>
-                <td>Row 4, Cell 2</td>
-                <td>Row 4, Cell 3</td>
-            </tr>
-        </tbody>
-    </table>
-                            
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">3111 Rio Zacatula, Mexicali BC</div>
-                            </div>
-                      </div>
-                    </div>
-                    
 
-                    <div class="col-md-12 mb-5 mt-5 mb-md-0 ">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">3111 Rio Zacatula, Mexicali BC</div>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-<section>
+<div class="text-white text-center   masthead2">
     
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+       <div class="container-fluid text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
+<div id="myCarousel" class="carousel    carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
+    <div class="carousel-inner  ">
         <div class="carousel-item active mb-5">
-            <div class="container px-6 px-lg-4 mb-7 container-gallery">
-                <div class="col-md-12 mb-5 mt-5 mb-md-0 ">
-                    <div class="card py-4 h-100">
+            <div class="container px-6 px-lg-4 mb-7 ">
+                <div class="col-md-12 mb-5 mt-5 mb-md-0 card-gallery ">
+                    <div class=" card py-4 h-100  ">
                         <div class="card-body text-center mb-7">
                             <table class="table table-bordered w-80 h-100">
                                 <thead>
@@ -117,8 +40,8 @@
                                 </thead>
                                 <tbody>
                                     <tr class="td-title pad">
-                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/png%20delta%20color.png" class="img-gallery"></td>
-                                        <td class="td-text h1 text-center align-items-center align-content-center">DeltaPrism</td>
+                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/florLotoFull.png" class="img-gallery"></td>
+                                        <td class="td-text h1 text-center align-items-center align-content-center">Flor de Loto</td>
                                         <td>Row 1, Cell 3</td>
                                     </tr>
                                     <tr class="td-desc">
@@ -144,8 +67,8 @@
             </div>
         </div>
         <div class="carousel-item mb-5">
-            <div class="container px-6 px-lg-4 container-gallery">
-                <div class="col-md-12 mb-5 mt-5 mb-md-0">
+            <div class="container px-6 px-lg-4 ">
+                <div class="col-md-12 mb-5 mt-5 mb-md-0 card-gallery">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                         <table class="table table-bordered w-80 h-100">
@@ -158,7 +81,7 @@
                                 </thead>
                                 <tbody>
                                     <tr class="td-title pad">
-                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/png%20delta%20color.png" class="img-gallery"></td>
+                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/deltaprism.png" class="img-gallery"></td>
                                         <td class="td-text h1 text-center align-items-center align-content-center">DeltaPrism</td>
                                         <td>Row 1, Cell 3</td>
                                     </tr>
@@ -195,15 +118,18 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
-</div>
+    </div>
+    </div>
+</div> 
 </section>
+
 <section class="about-section text-center" id="About">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
+                        <h2 class="text-white mb-4">Innovando el arte contemporáneo</h2>
                         <p class="text-white-50">
-                           Implementando un aprendizaje eficiente.
+                           Implementando un aprendizaje optimo de eficiencia destacable.
                         </p>
                     </div>
                 </div>

@@ -69,15 +69,9 @@ $(document).ready(function() {
     $('#editBtn').click(function(e) {
         e.preventDefault();
         $('#overlay').toggle();
-        $('#createForm').toggle(); // show Signup form
-       
-    });
-    /*$('#editBtn').click(function(e) {
-        e.preventDefault();
-        $('#overlay').toggle();
         $('#editForm').toggle(); // show Signup form
        
-    });*/
+    });
    
     $('#registerLink').click(function(e) {
         e.preventDefault(); // Prevent default anchor click behavior
