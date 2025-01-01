@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Web System</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="app/styles.css">
+    <link rel="stylesheet" href="/../../app/styles.css">
     
 </head>
 <body>
@@ -33,12 +33,16 @@ session_start();
                         if(isset($_SESSION["id"])){
                             echo "
                            
+                              <li class='nav-item'>
+                            <button type='button' class='btn btn-secondary' role='button'><a href='/../../app/pages/crud/addDesigns.php' >Catalog</a></button>
+                            </li>
+
                             <li class='nav-item'>
                             <button type='button' class='btn btn-tertiary' href='#Gallery' role='button'>Gallery</button>
                             </li>
                             
                             <li class='nav-item'>
-                            <button type='button' class='btn btn-secondary' role='button'><a href='app/pages/Gallery/Gallery.php' >Projects</a></button>
+                            <button type='button' class='btn btn-secondary' role='button'><a href='/../app/pages/Gallery/Gallery.php' >Projects</a></button>
                             </li>
 
                             <li class='nav-item'>

@@ -160,6 +160,36 @@
   z-index: 1000;
 }
 
+.Create-form {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px; /* Width of the form */
+  height: 75VH; /* Height of the form */
+  background: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 20px; /* Padding inside the form */
+  z-index: 1000;
+}
+.Edit-form {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px; /* Width of the form */
+  height: 75VH; /* Height of the form */
+  background: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 20px; /* Padding inside the form */
+  z-index: 1000;
+}
 *,
 *::before,
 *::after {
@@ -420,6 +450,25 @@ th {
   border-width: 0;
 }
 
+.th1{
+width: 20%;
+}
+.th2{
+  width: 20%;
+  }
+.td-text{
+ font-weight: 700;
+}
+.td-title{
+  height: 0pt;
+}
+.td-desc{
+  height: 90pt;
+}
+.td-image{
+  width: 200px; 
+  height: 200px;
+}
 label {
   display: inline-block;
 }
@@ -724,8 +773,12 @@ progress {
   color: #000;
 }
 
+.img-gallery{
+  width: 200px; 
+  height: 200px;
+}
 .container-gallery{
-  width: 500%;
+  width: 200%;
   height: 300%;
 }
 
@@ -6293,6 +6346,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  background-color: var(--misty-aqua);
 }
 
 .carousel.pointer-event {
@@ -6384,7 +6438,7 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.15s ease;
 }
 
@@ -11498,7 +11552,7 @@ body {
   height: 100%;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("assets/img/bg3.jpg");background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("assets/img/bg3.jpg");background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -11510,7 +11564,7 @@ body {
   height: 100%;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.7) 75%, #000 0%), url("assets/img/bg3.jpg");background-position: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("assets/img/bg3.jpg");background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -11525,7 +11579,20 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.h1{
+  font-size: x-large;
+  max-width: 200px;
+  margin:0pt 0pt 0pt 0pt;
+  padding: 0pt;
+}
 
+.pad{
+  padding: 0pt;
+}
+.h4{
+  font-size: small;
+  max-width: 200px;
+}
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;

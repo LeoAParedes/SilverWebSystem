@@ -20,16 +20,16 @@
 
 <section>
 <div class="text-white text-center py-5 masthead2">
-       <div class="container px-4 px-lg-5 d-flex h-200 align-items-left justify-content-left">
+       <div class="container px-4 px-lg-5 d-flex h-200 align-items-center align-content-center flex-fill">
        <div class="d-flex justify-content-center"> 
        <div class="text-center" >
        <div class="container  px-6 px-lg-4 container-gallery">
                 
-       <div class="col-md-12 mb-5 mt-5 mb-md-0 ">
+       <div class="col-md-12 mb-5 mt-5 mb-md-0  ">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 
-                            <table class="table table-bordered w-100 h-100">
+                            <table class="table table-bordered w-80 h-100">
         <thead>
             <tr>
                 <th>Column 1</th>
@@ -38,14 +38,26 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td rowspan="2">Row 1 & 2, Cell 1</td>
-                <td>Row 1, Cell 2</td>
-                <td>Row 1, Cell 3</td>
+            <tr class="td-title pad">
+                <td rowspan="2" class="td-image pad "><img src="/../../app/assets/img/png%20delta%20color.png" class="img-gallery " ></td>
+                <td  class="td-text h1  text-center  align-items-center align-content-center">DeltaPrism</td>
+                <td >Row 1, Cell 3</td>
             </tr>
-            <tr>
+            <tr class="td-desc">
                 
-                <td>Row 2, Cell 2</td>
+                <td class="td-text h4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, 
+                    sed dictum elit finibus sit amet. Etiam nec urna rutrum augue
+                     porta ullamcorper a ac sapien. Vestibulum ante ipsum primis in faucibus 
+                     orci luctus et ultrices posuere cubilia curaeNam dapibus, 
+                     lorem posuere porta luctus, elit turpis iaculis libero, at 
+                     fermentum sapien enim quis sem. Vivamus in scelerisque sapien, 
+                     ac lobortis risus. Vivamus sodales justo sapien, ut pellentesque
+                      lacus faucibus nec. In egestas, arcu nec rhoncus faucibus, magna 
+                      augue bibendum nisl, quis lobortis purus nisl sit amet leo. Praesent 
+                      eu vestibulum sem, ut lobortis risus. Aenean porta sem eu finibus 
+                      sodales. Cras posuere molestie aliquam. Nulla non dui tristique, 
+                      semper nisl id, blandit felis. Curabitur consequat mattis diam, ut consequat mi pellentesque ac. 
+                     Mauris rutrum dapibus magna a vehicula. Donec suscipit nisi quis tellus molestie dignissim.</td>
                 <td>Row 2, Cell 3</td>
             </tr>
             <tr>
@@ -86,7 +98,105 @@
     </div>
     </div>
 </section>
-
+<section>
+    
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active mb-5">
+            <div class="container px-6 px-lg-4 mb-7 container-gallery">
+                <div class="col-md-12 mb-5 mt-5 mb-md-0 ">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center mb-7">
+                            <table class="table table-bordered w-80 h-100">
+                                <thead>
+                                    <tr>
+                                        <th class="th1">Column 1</th>
+                                        <th class="th2">Column 2</th>
+                                        <th>Column 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="td-title pad">
+                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/png%20delta%20color.png" class="img-gallery"></td>
+                                        <td class="td-text h1 text-center align-items-center align-content-center">DeltaPrism</td>
+                                        <td>Row 1, Cell 3</td>
+                                    </tr>
+                                    <tr class="td-desc">
+                                        <td class="td-text h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien.</td>
+                                        <td>Row 2, Cell 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 3, Cell 1</td>
+                                        <td>Row 3, Cell 2</td>
+                                        <td>Row 3, Cell 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 4, Cell 1</td>
+                                        <td>Row 4, Cell 2</td>
+                                        <td>Row 4, Cell 3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item mb-5">
+            <div class="container px-6 px-lg-4 container-gallery">
+                <div class="col-md-12 mb-5 mt-5 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                        <table class="table table-bordered w-80 h-100">
+                                <thead>
+                                    <tr>
+                                        <th>Column 1</th>
+                                        <th>Column 2</th>
+                                        <th>Column 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="td-title pad">
+                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/png%20delta%20color.png" class="img-gallery"></td>
+                                        <td class="td-text h1 text-center align-items-center align-content-center">DeltaPrism</td>
+                                        <td>Row 1, Cell 3</td>
+                                    </tr>
+                                    <tr class="td-desc">
+                                        <td class="td-text h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. 
+                                            Etiam nec urna rutrum augue 
+                                            porta ullamcorper a ac sapien.
+                                            </td>
+                                        <td>Row 2, Cell 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 3, Cell 1</td>
+                                        <td>Row 3, Cell 2</td>
+                                        <td>Row 3, Cell 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 4, Cell 1</td>
+                                        <td>Row 4, Cell 2</td>
+                                        <td>Row 4, Cell 3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</section>
 <section class="about-section text-center" id="About">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -243,7 +353,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../scripts.js"></script>
+<script src="/../../app/scripts.js"></script>
 
 </body>
 

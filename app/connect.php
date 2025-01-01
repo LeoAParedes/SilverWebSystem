@@ -16,7 +16,7 @@ try {
     $pdo->exec("set names utf8");
     
     // Uncomment the line below to confirm the connection
-    echo "Connected successfully "; 
+    
 } catch (PDOException $e) {
     // Handle connection error
     echo "Connection failed: " . $e->getMessage();
