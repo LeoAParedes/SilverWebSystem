@@ -162,6 +162,21 @@
   z-index: 1000;
 }
 
+.Create-wish {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px; /* Width of the form */
+  height: 75VH; /* Height of the form */
+  background: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 20px; /* Padding inside the form */
+  z-index: 1000;
+}
 .Create-form {
   display: none; /* Initially hidden */
   position: absolute;
@@ -776,14 +791,16 @@ progress {
 }
 
 .img-gallery{
-  width: 200px; 
-  height: 200px;
+  width: 500px; 
+  height: 500px;
 }
 .container-gallery{
   width: 100%;
   height: 600%;
 }
-
+.table-cell {
+  height: 8.33vh;
+}
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -11605,6 +11622,41 @@ body {
   max-width: 200px;
   margin:0pt 0pt 0pt 0pt;
   padding: 0pt;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  width: 80vh; /* Adjust width as needed */
+  height: 80vh; /* Adjust height as needed */
+  gap: 5px; /* Space between cells */
+}
+
+.cell {
+  border: 1px solid #ccc; /* Light border for visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* White background for cells */
+}
+
+#img {
+  width: 80%; /* Responsive image size */
+  height: auto; /* Maintain aspect ratio */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+}
+
+#title {
+  font-size: 2vh; /* Title size */
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+#desc {
+  font-size: 1.5vh; /* Description size */
+  color: #666; /* Lighter text color */
 }
 
 .pad{

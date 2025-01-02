@@ -10,7 +10,9 @@ session_start();
     <title>Silver Web System</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/../../app/styles.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -46,14 +48,14 @@ session_start();
                             </li>
 
                             <li class='nav-item'>
-                            <form id='logoutForm' action='app/logout.php' method='POST' style='display: inline;'>
+                            <form id='logoutForm' action='/../../app/logout.php' method='POST' style='display: inline;'>
                             <button type='submit' class='btn btn-info' id='SignoutBtn' role='button'>Signout</button>
                             </form>
                             </li>
                             
                             ";
                          } else {
-                            echo "<li class='nav-item'><a class='btn btn-primary' href='#' id='loginBtn' role='button'>Log in</a></li>";
+                            echo "<li class='nav-item'><a class='btn btn-primary' href='/../../login.php' id='loginBtn' role='button'>Log in</a></li>";
                     
                         }                    ?>    
                     </ul>

@@ -9,9 +9,8 @@
        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
        <div class="d-flex justify-content-center"> 
        <div class="text-center" >
-                        <h1 class=" display-4 mx-auto my-0 text-uppercase">Una cultura de reflexion</h1>
+                        <h1 class=" display-4 mx-auto my-0 text-uppercase">Explica otra dimensión</h1>
                         <h2 class="text-white-50 mx-auto mt-4 mb-6">La mejor solucion para el desarrollo web</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
                     </div>
         </div>
     </div>
@@ -30,35 +29,97 @@
                 <div class="col-md-12 mb-5 mt-5 mb-md-0 card-gallery ">
                     <div class=" card py-4 h-100  ">
                         <div class="card-body text-center mb-7">
-                            <table class="table table-bordered w-80 h-100">
-                                <thead>
-                                    <tr>
-                                        <th class="th1">Column 1</th>
-                                        <th class="th2">Column 2</th>
-                                        <th>Column 3</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="td-title pad">
-                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/florLotoFull.png" class="img-gallery"></td>
-                                        <td class="td-text h1 text-center align-items-center align-content-center">Flor de Loto</td>
-                                        <td>Row 1, Cell 3</td>
-                                    </tr>
-                                    <tr class="td-desc">
-                                        <td class="td-text h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien.</td>
-                                        <td>Row 2, Cell 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Row 3, Cell 1</td>
-                                        <td>Row 3, Cell 2</td>
-                                        <td>Row 3, Cell 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Row 4, Cell 1</td>
-                                        <td>Row 4, Cell 2</td>
-                                        <td>Row 4, Cell 3</td>
-                                    </tr>
-                                </tbody>
+                        <table class="table table-bordered w-80 h-100">
+                      
+            <thead>
+                <tr>
+                    <th scope="col">Column 1</th>
+                    <th scope="col">Column 2</th>
+                    <th scope="col">Column 3</th>
+                    <th scope="col">Column 4</th>
+                    <th scope="col">Column 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-cell">Row 2, Cell 1</td>
+                    <td class="table-cell">Row 2, Cell 2</td>
+                    <td class="table-cell">Row 2, Cell 3</td>
+                    <td class="table-cell td-text h1 text-center align-items-center align-content-center" colspan="4" rowspan="1">Flor de Loto</td>
+                    <td class="table-cell">Row 2, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 3, Cell 1</td>
+                    <td class="table-cell td-image pad" colspan="1" rowspan="7"><img src="/../../app/assets/img/florLotoFull.png" class="img-gallery"></td>
+                    <td class="table-cell">Row 3, Cell 3</td>
+                    <td class="table-cell td-text h4 text-center align-items-center align-content-center" colspan="4" rowspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien</td>
+                
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 4, Cell 1</td>
+                    <td class="table-cell">Row 4, Cell 2</td>
+                    <td class="table-cell">Row 4, Cell 3</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 5, Cell 1</td>
+                    <td class="table-cell ">Row 5, Cell 2</td> 
+                    <td class="table-cell ">Row 5, Cell 3</td>
+                    <td class="table-cell">Row 5, Cell 4</td>
+                    <td class="table-cell">Row 5, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 6, Cell 1</td>
+                    <td class="table-cell">Row 6, Cell 2</td>
+                    <td class="table-cell">Row 6, Cell 3</td>
+                    <td class="table-cell">Row 6, Cell 4</td>
+                    <td class="table-cell">Row 6, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 7, Cell 1</td>
+                    <td class="table-cell">Row 7, Cell 2</td>
+                    <td class="table-cell">Row 7, Cell 3</td>
+                    <td class="table-cell">Row 7, Cell 4</td>
+                    <td class="table-cell">Row 7, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 8, Cell 1</td>
+                    <td class="table-cell">Row 8, Cell 2</td>
+                    <td class="table-cell">Row 8, Cell 3</td>
+                    <td class="table-cell">Row 8, Cell 4</td>
+                    <td class="table-cell">Row 8, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 9, Cell 1</td>
+                    <td class="table-cell">Row 9, Cell 2</td>
+                    <td class="table-cell">Row 9, Cell 3</td>
+                    <td class="table-cell">Row 9, Cell 4</td>
+                    <td class="table-cell">Row 9, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 10, Cell 1</td>
+                    <td class="table-cell">Row 10, Cell 2</td>
+                    <td class="table-cell">Row 10, Cell 3</td>
+                    <td class="table-cell">Row 10, Cell 4</td>
+                    <td class="table-cell">Row 10, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 11, Cell 1</td>
+                    <td class="table-cell">Row 11, Cell 2</td>
+                    <td class="table-cell">Row 11, Cell 3</td>
+                    <td class="table-cell">Row 11, Cell 4</td>
+                    <td class="table-cell">Row 11, Cell 5</td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Row 12, Cell 1</td>
+                    <td class="table-cell">Row 12, Cell 2</td>
+                    <td class="table-cell">Row 12, Cell 3</td>
+                    <td class="table-cell">Row 12, Cell 4</td>
+                    <td class="table-cell">Row 12, Cell 5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
                             </table>
                         
                         </div>

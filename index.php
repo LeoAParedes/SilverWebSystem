@@ -3,7 +3,7 @@
 
 <?php
     include_once("app/header.php");
-    require 'app/compile_scss.php';
+    
 ?>
 <header class="<?php echo isset($_SESSION["id"]) ? 'bg-success' : 'bg-info'; ?> text-white text-center py-5 masthead">
        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
@@ -167,12 +167,6 @@
         <p>&copy; <?php echo date("Y"); ?> My Landing Page. All rights reserved.</p>
     </div>
 </footer>
-
-<!-- jQuery and Bootstrap Bundle (includes Popper) -->
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="app/scripts.js"></script>
 
 </body>

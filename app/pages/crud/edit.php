@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $pdo->prepare("UPDATE designs SET name=?, creation_date=?, description=?, details=?, edition=?, unit_launch_price=? WHERE id=?");
     $stmt->execute([$name, $creation_date, $description, $details, $edition, $unit_launch_price, $id]);
 
-    header("Location: addDesigns.php");
     exit;
 }
 $id = $_GET['id'];

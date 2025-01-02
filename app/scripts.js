@@ -72,7 +72,34 @@ $(document).ready(function() {
         $('#editForm').toggle(); // show Signup form
        
     });
-   
+
+    $('#editBtn').click(function() {
+        $('.overlay').toggle();
+        const id = $(this).data('id');
+        const name = $(this).data('name');
+        const creationDate = $(this).data('creation-date');
+        const description = $(this).data('description');
+        const details = $(this).data('details');
+        const edition = $(this).data('edition');
+        const unitLaunchPrice = $(this).data('unit-launch-price');
+
+        $('#editId').val(id);
+        $('#editName').val(name);
+        $('#editCreationDate').val(creationDate);
+        $('#editDescription').val(description);
+        $('#editDetails').val(details);
+        $('#editEdition').val(edition);
+        $('#editUnitLaunchPrice').val(unitLaunchPrice);
+
+        $('#editForm').show();
+    });
+
+    $('#createBtn').click(function(e) {
+        e.preventDefault();
+        $('#overlay').toggle();
+        $('#createForm').toggle(); // show Signup form
+       
+    });
     $('#registerLink').click(function(e) {
         e.preventDefault(); // Prevent default anchor click behavior
         // Show overlay
