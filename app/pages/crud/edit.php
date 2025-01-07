@@ -1,6 +1,6 @@
 <?php
 // Include the database connection
-require 'addDesigns.php';
+require 'Designs.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -12,13 +12,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $edition = (int)$_POST['edition']; // Cast to integer
     $unit_launch_price = $_POST['unit_launch_price'];
 
-    $stmt = $pdo->prepare("UPDATE designs SET name=?, creation_date=?, description=?, details=?, edition=?, unit_launch_price=? WHERE id=?");
+    $stmt = $pdo->prepare("UPDATE design SET name=?, creation_date=?, description=?, details=?, edition=?, unit_launch_price=? WHERE designid=?");
     $stmt->execute([$name, $creation_date, $description, $details, $edition, $unit_launch_price, $id]);
 
     exit;
 }
-$id = $_GET['id'];
-$stmt = $pdo->prepare("SELECT * FROM designs WHERE id=?");
+$id = $_GET['designid'];
+$stmt = $pdo->prepare("SELECT * FROM design WHERE designid=?");
 $stmt->execute([$id]);
 $item = $stmt->fetch(PDO::FETCH_ASSOC);
+
 ?>

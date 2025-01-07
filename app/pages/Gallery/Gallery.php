@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
 
 <?php
     include_once("../../header.php");
@@ -16,120 +22,63 @@
     </div>
 
 </header>
-
+<body>
 <section>
 
 <div class="text-white text-center   masthead2">
     
+
        <div class="container-fluid text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
 <div id="myCarousel" class="carousel    carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
     <div class="carousel-inner  ">
         <div class="carousel-item active mb-5">
-            <div class="container px-6 px-lg-4 mb-7 ">
-                <div class="col-md-12 mb-5 mt-5 mb-md-0 card-gallery ">
-                    <div class=" card py-4 h-100  ">
-                        <div class="card-body text-center mb-7">
-                        <table class="table table-bordered w-80 h-100">
-                      
-            <thead>
-                <tr>
-                    <th scope="col">Column 1</th>
-                    <th scope="col">Column 2</th>
-                    <th scope="col">Column 3</th>
-                    <th scope="col">Column 4</th>
-                    <th scope="col">Column 5</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="table-cell">Row 2, Cell 1</td>
-                    <td class="table-cell">Row 2, Cell 2</td>
-                    <td class="table-cell">Row 2, Cell 3</td>
-                    <td class="table-cell td-text h1 text-center align-items-center align-content-center" colspan="4" rowspan="1">Flor de Loto</td>
-                    <td class="table-cell">Row 2, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 3, Cell 1</td>
-                    <td class="table-cell td-image pad" colspan="1" rowspan="7"><img src="/../../app/assets/img/florLotoFull.png" class="img-gallery"></td>
-                    <td class="table-cell">Row 3, Cell 3</td>
-                    <td class="table-cell td-text h4 text-center align-items-center align-content-center" colspan="4" rowspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien</td>
+        <div class="card2 text-center card-body row-cols-sm-1 row-cols-md-2  row-cols-lg-4  mb-4 h-100 ">
+           <div class="row ">
+            <div class="col  ">
                 
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 4, Cell 1</td>
-                    <td class="table-cell">Row 4, Cell 2</td>
-                    <td class="table-cell">Row 4, Cell 3</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 5, Cell 1</td>
-                    <td class="table-cell ">Row 5, Cell 2</td> 
-                    <td class="table-cell ">Row 5, Cell 3</td>
-                    <td class="table-cell">Row 5, Cell 4</td>
-                    <td class="table-cell">Row 5, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 6, Cell 1</td>
-                    <td class="table-cell">Row 6, Cell 2</td>
-                    <td class="table-cell">Row 6, Cell 3</td>
-                    <td class="table-cell">Row 6, Cell 4</td>
-                    <td class="table-cell">Row 6, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 7, Cell 1</td>
-                    <td class="table-cell">Row 7, Cell 2</td>
-                    <td class="table-cell">Row 7, Cell 3</td>
-                    <td class="table-cell">Row 7, Cell 4</td>
-                    <td class="table-cell">Row 7, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 8, Cell 1</td>
-                    <td class="table-cell">Row 8, Cell 2</td>
-                    <td class="table-cell">Row 8, Cell 3</td>
-                    <td class="table-cell">Row 8, Cell 4</td>
-                    <td class="table-cell">Row 8, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 9, Cell 1</td>
-                    <td class="table-cell">Row 9, Cell 2</td>
-                    <td class="table-cell">Row 9, Cell 3</td>
-                    <td class="table-cell">Row 9, Cell 4</td>
-                    <td class="table-cell">Row 9, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 10, Cell 1</td>
-                    <td class="table-cell">Row 10, Cell 2</td>
-                    <td class="table-cell">Row 10, Cell 3</td>
-                    <td class="table-cell">Row 10, Cell 4</td>
-                    <td class="table-cell">Row 10, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 11, Cell 1</td>
-                    <td class="table-cell">Row 11, Cell 2</td>
-                    <td class="table-cell">Row 11, Cell 3</td>
-                    <td class="table-cell">Row 11, Cell 4</td>
-                    <td class="table-cell">Row 11, Cell 5</td>
-                </tr>
-                <tr>
-                    <td class="table-cell">Row 12, Cell 1</td>
-                    <td class="table-cell">Row 12, Cell 2</td>
-                    <td class="table-cell">Row 12, Cell 3</td>
-                    <td class="table-cell">Row 12, Cell 4</td>
-                    <td class="table-cell">Row 12, Cell 5</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-                            </table>
-                        
-                        </div>
-                    </div>
+             <div class="col td-text h1  my-3 mx-auto align-items-center align-content-center" >Flor de Loto</div>
+             
+                <div class="col ">
+                <h1><img src="/../../app/assets/img/florLotoFull.png" class="img-fluid"></h1>
+                  
+                    <div class=" td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien</div>  
+                
                 </div>
+                
+                </div>        
+        <div class="col d-none d-lg-block d-md-block">
+            <div class="td-text text-center align-items-center my-3 mx-auto w-100 align-content-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien
+            </div>
+        </div>
+            </div>
+            <div class="row d-md-none ">
+            <div class="col  ">
+                
+             <div class="col td-text h1  my-3 mx-auto align-items-center align-content-center" >Flor de Loto</div>
+             
+                <div class="col ">
+                <h1><img src="/../../app/assets/img/florLotoFull.png" class="img-fluid"></h1>
+                  
+                    <div class=" td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien</div>  
+                
+                </div>
+                
+                </div>        
+        <div class="col d-none d-lg-block d-md-block">
+            <div class="td-text text-center align-items-center my-3 mx-auto w-100 align-content-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien
+            </div>
+        </div>
+            </div>
+        
+            
+        
             </div>
         </div>
         <div class="carousel-item mb-5">
             <div class="container px-6 px-lg-4 ">
-                <div class="col-md-12 mb-5 mt-5 mb-md-0 card-gallery">
+                <div class="col-md-12 mb-5 mt-5 mb-md-0 col-sm card-gallery">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                         <table class="table table-bordered w-80 h-100">
@@ -142,7 +91,7 @@
                                 </thead>
                                 <tbody>
                                     <tr class="td-title pad">
-                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/deltaprism.png" class="img-gallery"></td>
+                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/deltaprism.png" class="img-fluid"></td>
                                         <td class="td-text h1 text-center align-items-center align-content-center">DeltaPrism</td>
                                         <td>Row 1, Cell 3</td>
                                     </tr>
@@ -250,80 +199,6 @@
                 </div>
             </div>
         </section>    
-<!-- Overlay for the login form -->
-<div class="overlay" id="overlay"></div>
-
-<!-- Login Form -->
-<div class="Signup-form" id="SignupForm">
-    <h3>Signup</h3>
-    <form action="app/register.php" method="post">
-        <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" name="username"class="form-control" id="username" required>
-        </div>
-        <div class="mb-3">
-            <label for="password"  class="form-label">Password</label>
-            <input type="password" name="password" class="form-control" id="password" required>
-        </div>
-        <div class="mb-3">
-            <label for="passwordrpt"  class="form-label">Repeat Password</label>
-            <input type="password" name="passwordrpt" class="form-control" id="password" required>
-        </div>
-        <button type="submit" name="submit" class="btn btn-primary" >Submit</button>
-        
-    </form>
-    <p class="mt-3">Already an user? <a href="#" name="switch" id="registerLink">Click here</a></p>
-    <?php
-    if(isset($_GET["error"])){
-        if($_GET["error"]== "emptyInputSignUp"){
-            echo "<p>Fill in all fields!<p>";
-        }
-    }
-    
-    if(isset($_GET["error"])){
-        if($_GET["error"]== "passworddontmatch"){
-            echo "<p>Match the passswords!<p>";
-        }
-    }
-    if(isset($_GET["error"])){
-        if($_GET["error"]== "UserAlredyExists"){
-            echo "<p>Select another user!<p>";
-        }
-    }
-    ?>
-</div>
-
-<div class="Login-form"  id="LoginForm">
-    <h3>Login</h3>
-    <form action="app/login.php" method="post">
-        <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" name="username"class="form-control" id="username" required>
-        </div>
-        <div class="mb-3">
-            <label for="password"  class="form-label">Password</label>
-            <input type="password" name="password" class="form-control" id="password" required>
-        </div>
-       
-        <button type="submit" name="submit" class="btn btn-primary" >Submit</button>
-         
-    </form>
-    <p class="mt-8 mb-6">Don't have an account?<a href="#"  id="registerLink2">Click here</a></p>
-    <?php
-    if(isset($_GET["error"])){
-        if($_GET["error"]== "emptyInputLogin"){
-            echo "<p>Fill in all fields!<p>";
-        }
-    }
-    
-    if(isset($_GET["error"])){
-        if($_GET["error"]== "wronglogin"){
-            echo "<p>Match the passswords!<p>";
-        }
-    }
-   
-    ?>
-</div>
 
 <form id="logoutForm" action="logout.php" method="POST" style="display: none;">
         <input type="hidden" name="logout" value="1">

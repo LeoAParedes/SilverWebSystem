@@ -1,9 +1,9 @@
 <?php
 // Database connection details
 $host = 'localhost'; // Change if your database is hosted elsewhere
-$dbname = 'bebalridge'; // Replace with your database name
-$username = 'root'; // Replace with your database username
-$password = ''; // Replace with your database password
+$dbname = 'silverwebsystem'; // Replace with your database name
+$username = 'web'; // Replace with your database username
+$password = '24#foldpass'; // Replace with your database password
 
 try {
     // Create a new PDO instance

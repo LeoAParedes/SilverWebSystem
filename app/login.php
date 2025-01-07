@@ -1,5 +1,6 @@
 <?php
  require("connect.php");
+ require("header.php");
  require ("functions.php");
 if(isset($_POST["submit"]) ) {
 

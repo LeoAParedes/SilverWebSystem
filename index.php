@@ -167,8 +167,8 @@
         <p>&copy; <?php echo date("Y"); ?> My Landing Page. All rights reserved.</p>
     </div>
 </footer>
-<script src="app/scripts.js"></script>
 
+<script src="app/scripts.js"></script>
 </body>
 
 </html>

@@ -10,9 +10,14 @@ session_start();
     <title>Silver Web System</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/../../app/styles.css">
+    
+
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+   
 </head>
 <body>
 
@@ -21,7 +26,7 @@ session_start();
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="navbar-brand" href="../../../index.php">Silver Web System</a>    
+                <a class="navbar-brand" href="/../../index.php">Silver Web System</a>    
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     
                    
@@ -36,15 +41,14 @@ session_start();
                             echo "
                            
                               <li class='nav-item'>
-                            <button  class='btn btn-catalog' role='button'><a href='/../../app/pages/crud/addDesigns.php' >Catalog</a></button>
+                            <button  class='btn btn-catalog' role='button'><a href='/../../app/pages/crud/Designs.php' >Catalog</a></button>
                             </li>
 
-                            <li class='nav-item'>
-                            <button type='button' class='btn btn-tertiary' href='#Gallery' role='button'>Gallery</button>
-                            </li>
                             
                             <li class='nav-item'>
-                            <button type='button' class='btn btn-secondary' role='button'><a href='/../app/pages/Gallery/Gallery.php' >Projects</a></button>
+                            <a type='button' class='btn btn-secondary' href='/../app/pages/Gallery/Gallery.php' role='button'>
+                                Gallery
+                            </a>
                             </li>
 
                             <li class='nav-item'>
@@ -55,8 +59,7 @@ session_start();
                             
                             ";
                          } else {
-                            echo "<li class='nav-item'><a class='btn btn-primary' href='/../../login.php' id='loginBtn' role='button'>Log in</a></li>";
-                    
+                            echo "<li class='nav-item'><button type='button' class='btn btn-primary'  id='loginBtn' role='button'>Log in</button></li>";
                         }                    ?>    
                     </ul>
                 </div>
