@@ -28,53 +28,46 @@
 <div class="text-white text-center   masthead2">
     
 
-       <div class="container-fluid text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
+       <div class="container-xl text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
 <div id="myCarousel" class="carousel    carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
     <div class="carousel-inner  ">
         <div class="carousel-item active mb-5">
-        <div class="card2 text-center card-body row-cols-sm-1 row-cols-md-2  row-cols-lg-4  mb-4 h-100 ">
-           <div class="row ">
-            <div class="col  ">
-                
-             <div class="col td-text h1  my-3 mx-auto align-items-center align-content-center" >Flor de Loto</div>
-             
-                <div class="col ">
-                <h1><img src="/../../app/assets/img/florLotoFull.png" class="img-fluid"></h1>
-                  
-                    <div class=" td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien</div>  
-                
+            <div class="card text-center mb-4 h-100">
+                <div class="card-body ">
+                    <section class="d-xs-none d-md-block ">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col-4 "></div>   
+                            <div class="col-xs-1 col-sm-  align-content-center text-center align-items-center">
+                                <h2 class="td-text my-3 mx-auto">Flor de loto</h2>
+                            </div>
+                            <div class="col-4 "></div>   
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                            <div class="col col-md-6">
+                                <h1><img src="/../../app/assets/img/florLotoFull.png" class="img-fluid"></h1>
+                            </div>   
+                            <div class="col-xs-12 col-sm-6 align-content-center text-center align-items-center">
+                                <h2 class="td-text  my-3 mx-auto">Flor de loto</h2>
+                                <div class="td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien
+                                        </div>
+                                    <div>
+                                    <button class="btn btn-primary  rounded-5  align-content-right align-items-right">Wishlist</button>
+                                    </div>
+                            </div>
+                            
+                        </div>
+
+                    </section>    
                 </div>
-                
-                </div>        
-        <div class="col d-none d-lg-block d-md-block">
-            <div class="td-text text-center align-items-center my-3 mx-auto w-100 align-content-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien
             </div>
-        </div>
-            </div>
-            <div class="row d-md-none ">
-            <div class="col  ">
-                
-             <div class="col td-text h1  my-3 mx-auto align-items-center align-content-center" >Flor de Loto</div>
-             
-                <div class="col ">
-                <h1><img src="/../../app/assets/img/florLotoFull.png" class="img-fluid"></h1>
-                  
-                    <div class=" td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien</div>  
-                
-                </div>
-                
-                </div>        
-        <div class="col d-none d-lg-block d-md-block">
-            <div class="td-text text-center align-items-center my-3 mx-auto w-100 align-content-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien
-            </div>
-        </div>
-            </div>
-        
+
+   
+</div> 
+
             
-        
-            </div>
         </div>
         <div class="carousel-item mb-5">
             <div class="container px-6 px-lg-4 ">
