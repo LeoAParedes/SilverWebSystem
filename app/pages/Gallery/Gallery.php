@@ -6,39 +6,71 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
-
 <?php
-    include_once("../../header.php");
-   
-?>
+include_once("../../header.php");
+include("../../connect.php");
+
+// Step 1: Query all designs
+$query = "
+    SELECT designid, design.name AS design_name 
+    FROM design
+";
+
+$stmt = $pdo->prepare($query);
+$stmt->execute();
+
+// Step 2: Start the carousel
+$html = '
 <header class="text-white text-center py-5 masthead" id="gallery">
-       <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-       <div class="d-flex justify-content-center"> 
-       <div class="text-center" >
-                        <h1 class=" display-4 mx-auto my-0 text-uppercase">Explica otra dimensión</h1>
-                        <h2 class="text-white-50 mx-auto mt-4 mb-6">La mejor solucion para el desarrollo web</h2>
-                    </div>
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center"> 
+            <div class="text-center">
+                <h1 class="display-4 mx-auto my-0 text-uppercase">Explica otra dimensión</h1>
+                <h2 class="text-white-50 mx-auto mt-4 mb-6">La mejor solucion para el desarrollo web</h2>
+            </div>
         </div>
     </div>
-
 </header>
 <body>
 <section>
+    <div class="text-white text-center masthead2">
+        <div class="container-xl text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
+            <div id="myCarousel" class="carousel carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
+                <div class="carousel-inner">';
 
-<div class="text-white text-center   masthead2">
-    
+if ($stmt->rowCount() > 0) {
+    $isFirstItem = true;
 
-       <div class="container-xl text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
-<div id="myCarousel" class="carousel    carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
-    <div class="carousel-inner  ">
-        <div class="carousel-item active mb-5">
-            <div class="card text-center mb-4 h-100">
-                <div class="card-body ">
-                    <section class="d-xs-none d-md-block ">
+    // Step 3: Loop through each design
+    while ($designRow = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $designId = $designRow['designid'];
+
+        // Query for images associated with the current design
+        $imageQuery = "
+            SELECT images.image_path, design.size, design.edition, design.category, design.description 
+            FROM images 
+            JOIN design ON design.designid = images.designid 
+            WHERE design.designid = :designId
+        ";
+
+        $imageStmt = $pdo->prepare($imageQuery);
+        $imageStmt->bindParam(':designId', $designId, PDO::PARAM_INT);
+        $imageStmt->execute();
+
+        // Check if there are images for the current design
+        if ($imageStmt->rowCount() > 0) {
+            while ($imageRow = $imageStmt->fetch(PDO::FETCH_ASSOC)) {
+                
+                     
+                $html .= '
+                <div class="carousel-item ' . ($isFirstItem ? 'active' : '') . ' mb-5">
+                    <div class="card text-center mb-4 h-100">
+                        <div class="card-body">
+                         <section class="d-xs-none d-md-block ">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col-4 "></div>   
                             <div class="col-xs-1 col-sm-  align-content-center text-center align-items-center">
-                                <h2 class="td-text my-3 mx-auto">Flor de loto</h2>
+                               <h1 class="td-text my-3 mx-auto " id="title">' . htmlspecialchars($designRow['design_name']) . '</h1>
                             </div>
                             <div class="col-4 "></div>   
                         </div>
@@ -46,12 +78,16 @@
                         <div class="row row-cols-1 row-cols-md-2 g-4">
 
                             <div class="col col-md-6">
-                                <h1><img src="/../../app/assets/img/florLotoFull.png" class="img-fluid"></h1>
+                              <h1><img src="' . htmlspecialchars($imageRow['image_path']) . '" id="designimage" class="img-fluid"></h1>
                             </div>   
                             <div class="col-xs-12 col-sm-6 align-content-center text-center align-items-center">
-                                <h2 class="td-text  my-3 mx-auto">Flor de loto</h2>
-                                <div class="td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Ut cursus pretium metus, sed dictum elit finibus sit amet. Etiam nec urna rutrum augue porta ullamcorper a ac sapien
+                                <h1 class="td-text my-3 h1 mx-auto" id="title">' . htmlspecialchars($designRow['design_name']) . '</h1>
+                           <div class="row td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">
+                           <div class="col td-text text-center align-items-center my-3  mx-auto w-100 align-content-center" id="size"><p>Tamaño: ' . htmlspecialchars($imageRow['size']) . '</p></div>
+                             <div class="col td-text text-center align-items-center my-3  mx-auto w-100 align-content-center" id="edition"><p>Edición: ' . htmlspecialchars($imageRow['edition']) . '</p></div>
+                            <div class="col td-text text-center align-items-center my-3  mx-auto w-100 align-content-center" id="category"><p>Categoría: ' . htmlspecialchars($imageRow['category']) . '</p></div>
+                            <div class="td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center" id="description">' . htmlspecialchars($imageRow['description']) . '</div>
+                            
                                         </div>
                                     <div>
                                     <button class="btn btn-primary  rounded-5  align-content-right align-items-right">Wishlist</button>
@@ -61,14 +97,23 @@
                         </div>
 
                     </section>    
-                </div>
-            </div>
+                         
+                        </div>
+                    </div>
+                </div>';
+                $isFirstItem = false; // Set to false after the first item
+            }
+        }
+    }
+} else {
+    $html .= "No results found.";
+}
 
-   
-</div> 
 
-            
-        </div>
+
+echo $html; // Output all at once
+?>
+
         <div class="carousel-item mb-5">
             <div class="container px-6 px-lg-4 ">
                 <div class="col-md-12 mb-5 mt-5 mb-md-0 col-sm card-gallery">
@@ -112,7 +157,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>

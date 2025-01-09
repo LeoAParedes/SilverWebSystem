@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     $('.editBtn').click(function(e) {
         e.preventDefault(); 
         $('#overlay').show(); 
@@ -26,26 +25,22 @@ $(document).ready(function() {
 
     });
 
+
+
+
     $('#createBtn').click(function(e) {
         e.preventDefault();
         $('#overlay').toggle();
        $('#createForm').toggle(); 
     });
 
-    $('.deleteBtn').click(function(e) {
-        e.preventDefault(); // Prevent default action
-        $('#overlay').show(); 
-        $('#deleteForm').toggle(); 
-    
-        const designid = $(this).data('designid');
-        $('#deleteId').val(designid); // Set the design ID in the hidden input of the delete form
-    });
     
     $('#overlay').click(function() {
         
         $(this).hide();
         $('#editForm').hide();
         $('#createForm').hide(); 
+        $('#DeleteForm').hide(); 
     });
 
    

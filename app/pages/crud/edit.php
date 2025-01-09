@@ -16,7 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $imagePath = null;
     if (isset($_FILES['image']) && $_FILES['image']['error'] == UPLOAD_ERR_OK) {
         $targetDirectory = __DIR__.'/../../assets/img/';
+        
         $imageFileName = basename($_FILES['image']['name']);
+        $imageFileDirectory ='/../../app/assets/img/'. $imageFileName;
         $imagePath = $targetDirectory . $imageFileName;
 
         if (move_uploaded_file($_FILES['image']['tmp_name'], $imagePath)) {
@@ -31,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    
     if ($imagePath) {
         $stmt = $pdo->prepare("INSERT INTO images (image_path, name, designid) VALUES (?, ?, ?)");
-        $stmt->execute([$imagePath, $name, $id]);
+        $stmt->execute([$imageFileDirectory, $name, $id]);
     }
 
     header("Location: designs.php?message=Design updated successfully");

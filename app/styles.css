@@ -208,14 +208,14 @@
   z-index: 1000;
 }
 
-.Delete-form {
+#DeleteForm {
   display: none; /* Initially hidden */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto; /* Width of the form */
-  height: auto; /* Height of the form */
+  width:40vw; /* Width of the form */
+  height: 30vh; /* Height of the form */
   background: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
   backdrop-filter: blur(10px); /* Blurry effect */
   border-radius: 8px; /* Rounded corners */

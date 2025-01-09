@@ -73,8 +73,8 @@ if (isset($_GET['designid'])) {
 </div>
 </section>
 <section >
-<div class="container  Delete-form" id="DeleteForm">
-    <div class="<?= isset($_GET['id']) ? 'container my-5 show' : 'container my-5 d-none' ?>" id="deleteForm">
+<div class="container justify-content-center col-3 " >
+    <div class="<?= isset($_GET['id']) ? 'container my-5 show mx-4 ' : 'container my-5 d-none' ?>" id="deleteForm">
     <h2>Confirm Deletion</h2>
     <form method="POST" action="deleteDesign.php">
         <input type="hidden" name="designid" id="deleteId" value="<?= isset($_GET['id']) ? htmlspecialchars($_GET['id']) : ''; ?>">
@@ -85,58 +85,60 @@ if (isset($_GET['designid'])) {
 </div>
 </div>
     </section>
-<section>
+    <section>
+    <div class="container Create-form" id="createForm">
+        <h2>Create Design</h2>
+        <form method="POST" action="add.php" enctype="multipart/form-data" class="form">
+            <input type="hidden" name="id" id="editId">
 
-<div class="container  Create-form" id="createForm">
-    <h2>Create Design</h2>
-    <form method="POST" action="add.php" class="form">
-        <input type="hidden" name="id" id="editId">
-        <div class="mb-3 row-2">
-        <div> <label for="name" class="form-label">Name</label>
-            <input type="text card" class="form-control" id="editName" name="name" required></div>    
-                       
-        </div>
-        <div class="mb-3 col">
-            <label for="creation_date" class="form-label">Creation Date</label>
-            <input type="date" class="form-control" id="editCreationDate" name="creation_date" required>
-        </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="editName" name="name" required>
+            </div>
 
-        <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="editDescription" name="description" required></textarea>
-        </div>
-        <input type="hidden" id="details" name="details">
-        
-        <div class="mb-3">
-            <label for="unit_launch_price" class="form-label">Unit Launch Price</label>
-            <input type="number" step="0.01" class="form-control" id="editUnitLaunchPrice" name="unit_launch_price" required>
-        </div>
-        
-        <div class="mb-3 edition-input">
-        <label for="edition" class="form-label">Edition</label>
-        <input type="text" class="form-control" id="edition" name="edition">
-        </div>
+            <div class="mb-3">
+                <label for="creation_date" class="form-label">Creation Date</label>
+                <input type="date" class="form-control" id="editCreationDate" name="creation_date" required>
+            </div>
 
-        <div class="mb-3 size-input">
-            <label for="size" class="form-label">Size</label>
-            <input type="text" class="form-control" id="size" name="size">
-        </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="editDescription" name="description" required></textarea>
+            </div>
 
-        <div class="mb-3 category-input">
-            <label for="category" class="form-label">Category</label>
-            <input type="text" class="form-control" id="category" name="category">
-        </div>
-        <button  class="btn btn-secondary mx-2" id="json"><i   class="fa-solid fa-file"></i></button>
-    
-        <button type="submit"  class="btn btn-primary">Create Design</button>
-    </form>
-</div>
+            <div class="mb-3">
+                <label for="size" class="form-label">Size</label>
+                <input type="text" class="form-control" id="size" name="size" required>
+            </div>
 
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <input type="text" class="form-control" id="category" name="category" required>
+            </div>
 
-<div class="container mb-5">
-<button id="createBtn" class="mt-5 btn btn-success btn-sm">Create</button>
+            <div class="mb-3">
+                <label for="edition" class="form-label">Edition</label>
+                <input type="number" class="form-control" id="edition" name="edition" required>
+            </div>
 
-<section>
+            <div class="mb-3">
+                <label for="unit_launch_price" class="form-label">Unit Launch Price</label>
+                <input type="number" step="0.01" class="form-control" id="editUnitLaunchPrice" name="unit_launch_price" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="imageUpload" class="form-label">Upload Image</label>
+                <input type="file" class="form-control" id="imageUpload" name="image" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Design</button>
+        </form>
+    </div>
+
+    <div class="container mb-5">
+        <button id="createBtn" class="mt-5 btn btn-success btn-sm">Create</button>
+    </div>
+</section>
 
 <div class="container">
     <h1>Designs</h1>
@@ -175,7 +177,8 @@ if (isset($_GET['designid'])) {
                             data-category="<?php echo htmlspecialchars($design['category']); ?>" 
                             data-edition="<?php echo htmlspecialchars($design['edition']); ?>" 
                             data-unit_launch_price="<?php echo htmlspecialchars($design['unit_launch_price']); ?>">Edit</a>
-                        <a href="deleteDesign.php?id=<?= $design['designid'] ?>" class="btn btn-danger btn-sm deleteBtn">Delete</a>
+                            <a href="deleteDesign.php?id=<?= $design['designid'] ?>"  class="btn btn-danger btn-sm deleteBtn">Delete</a>
+                        
                         </td>
                 </tr>
             <?php endforeach; ?>
