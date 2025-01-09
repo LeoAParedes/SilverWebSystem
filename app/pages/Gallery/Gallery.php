@@ -21,11 +21,11 @@ $stmt->execute();
 
 // Step 2: Start the carousel
 $html = '
-<header class="text-white text-center py-5 masthead" id="gallery">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+<header class="text-white text-center py-5 masthead " id="gallery">
+    <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-center">
         <div class="d-flex justify-content-center"> 
             <div class="text-center">
-                <h1 class="display-4 mx-auto my-0 text-uppercase">Explica otra dimensión</h1>
+                <h1 class="display-4 mx-auto t1 my-0 text-uppercase">Explica otra dimensión</h1>
                 <h2 class="text-white-50 mx-auto mt-4 mb-6">La mejor solucion para el desarrollo web</h2>
             </div>
         </div>
@@ -33,7 +33,7 @@ $html = '
 </header>
 <body>
 <section>
-    <div class="text-white text-center masthead2">
+    <div class="text-white text-center masthead3">
         <div class="container-xl text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
             <div id="myCarousel" class="carousel carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
                 <div class="carousel-inner">';
@@ -64,13 +64,13 @@ if ($stmt->rowCount() > 0) {
                      
                 $html .= '
                 <div class="carousel-item ' . ($isFirstItem ? 'active' : '') . ' mb-5">
-                    <div class="card text-center mb-4 h-100">
+                    <div class="card2 text-center mb-4 h-100">
                         <div class="card-body">
                          <section class="d-xs-none d-md-block ">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col-4 "></div>   
                             <div class="col-xs-1 col-sm-  align-content-center text-center align-items-center">
-                               <h1 class="td-text my-3 mx-auto " id="title">' . htmlspecialchars($designRow['design_name']) . '</h1>
+                               <h1 class="td-text my-3 mx-auto ">' . htmlspecialchars($designRow['design_name']) . '</h1>
                             </div>
                             <div class="col-4 "></div>   
                         </div>
@@ -79,14 +79,16 @@ if ($stmt->rowCount() > 0) {
 
                             <div class="col col-md-6">
                               <h1><img src="' . htmlspecialchars($imageRow['image_path']) . '" id="designimage" class="img-fluid"></h1>
-                            </div>   
-                            <div class="col-xs-12 col-sm-6 align-content-center text-center align-items-center">
-                                <h1 class="td-text my-3 h1 mx-auto" id="title">' . htmlspecialchars($designRow['design_name']) . '</h1>
-                           <div class="row td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">
-                           <div class="col td-text text-center align-items-center my-3  mx-auto w-100 align-content-center" id="size"><p>Tamaño: ' . htmlspecialchars($imageRow['size']) . '</p></div>
-                             <div class="col td-text text-center align-items-center my-3  mx-auto w-100 align-content-center" id="edition"><p>Edición: ' . htmlspecialchars($imageRow['edition']) . '</p></div>
-                            <div class="col td-text text-center align-items-center my-3  mx-auto w-100 align-content-center" id="category"><p>Categoría: ' . htmlspecialchars($imageRow['category']) . '</p></div>
-                            <div class="td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center" id="description">' . htmlspecialchars($imageRow['description']) . '</div>
+                            <div class="row rows-col-3 details">
+                             <div class="col td-text text-center align-items-center   mx-auto w-100 align-content-center" id="size"><p>Tamaño: ' . htmlspecialchars($imageRow['size']) . '</p></div>
+                             <div class="col td-text text-center align-items-center  mx-auto w-100 align-content-center" id="edition"><p>Edición: ' . htmlspecialchars($imageRow['edition']) . '</p></div>
+                            <div class="col-2 td-text text-center align-items-center   mx-auto w-100 align-content-center" id="category"><p>Categoría: ' . htmlspecialchars($imageRow['category']) . '</p></div>
+                          
+                            </div>
+                              </div>   
+                            <div class="col-xs-12 col-sm-12 col-md-6 align-content-center text-center align-items-center">
+                                  <div class="row td-text mx-4 text-center align-items-center my-3 mx-auto w-100 align-content-center">
+                            <div class="td-text mx-4 text-center align-items-center my-3 mx-auto  align-content-center desc" id="description">' . htmlspecialchars($imageRow['description']) . '</div>
                             
                                         </div>
                                     <div>
@@ -113,51 +115,7 @@ if ($stmt->rowCount() > 0) {
 
 echo $html; // Output all at once
 ?>
-
-        <div class="carousel-item mb-5">
-            <div class="container px-6 px-lg-4 ">
-                <div class="col-md-12 mb-5 mt-5 mb-md-0 col-sm card-gallery">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                        <table class="table table-bordered w-80 h-100">
-                                <thead>
-                                    <tr>
-                                        <th>Column 1</th>
-                                        <th>Column 2</th>
-                                        <th>Column 3</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="td-title pad">
-                                        <td rowspan="2" class="td-image pad"><img src="/../../app/assets/img/deltaprism.png" class="img-fluid"></td>
-                                        <td class="td-text h1 text-center align-items-center align-content-center">DeltaPrism</td>
-                                        <td>Row 1, Cell 3</td>
-                                    </tr>
-                                    <tr class="td-desc">
-                                        <td class="td-text h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus pretium metus, sed dictum elit finibus sit amet. 
-                                            Etiam nec urna rutrum augue 
-                                            porta ullamcorper a ac sapien.
-                                            </td>
-                                        <td>Row 2, Cell 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Row 3, Cell 1</td>
-                                        <td>Row 3, Cell 2</td>
-                                        <td>Row 3, Cell 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Row 4, Cell 1</td>
-                                        <td>Row 4, Cell 2</td>
-                                        <td>Row 4, Cell 3</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </>
+<section>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>

@@ -208,7 +208,7 @@
   z-index: 1000;
 }
 
-#DeleteForm {
+#deleteForm {
   display: none; /* Initially hidden */
   position: absolute;
   top: 50%;
@@ -4650,7 +4650,7 @@ textarea.form-control-lg {
   --bs-card-height: auto ;
   --bs-card-width: 100% ;
   --bs-card-color: ;
-  --bs-card-bg:  rgba(255, 255, 255, 0.5);
+  --bs-card-bg:  rgba(255, 255, 255, .7);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4668,7 +4668,7 @@ textarea.form-control-lg {
 
 .card2 {
   --bs-card-spacer-y: 1rem;
-  --bs-card-spacer-x: 1rem;
+  --bs-card-spacer-x: 5rem;
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-border-width: 1px;
   --bs-card-border-color: var(--bs-border-color-translucent);
@@ -4677,12 +4677,12 @@ textarea.form-control-lg {
   --bs-card-inner-border-radius: calc(0.375rem - 1px);
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
-  --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --bs-card-cap-bg: rgba(0, 0, 0, 0.3);
   --bs-card-cap-color: ;
   --bs-card-height: auto ;
   --bs-card-width: 100% ;
-  --bs-card-color: ;
-  --bs-card-bg: #fff;
+  --bs-card-color: rgba(0,0,0,1) ;
+  --bs-card-bg:rgba(255,255,255,0.3);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -11703,6 +11703,18 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
+
+.masthead3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("assets/img/bg2.jpg");background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 .masthead h1, .masthead .h1 {
   font-family: crimson text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
@@ -11713,6 +11725,11 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+.t1{
+color: #fff;
+}
+
 .h1{
   font-size: x-large;
   max-width: 100%;
@@ -11750,11 +11767,15 @@ body {
   color: #333; /* Dark text color */
 }
 
-#desc {
-  font-size: 15pt; /* Description size */
-  color: #666; /* Lighter text color */
+.desc {
+  font-size: 25pt; /* Description size */
+   /* Lighter text color */
 }
 
+.details {
+  font-size: 16pt; /* Description size */
+   /* Lighter text color */
+}
 .pad{
   padding: 0pt;
 }
@@ -11774,10 +11795,11 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .masthead {
+  .masthead  {
     height: 100vh;
     padding: 0;
   }
+}
   .masthead h1, .masthead .h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
@@ -11787,7 +11809,7 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
-}
+
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
