@@ -97,4 +97,34 @@ $(document).ready(function() {
         $('#createForm').hide();
         $('#editForm').hide();
     });
+
+    
+
+    function addToWishlist(designid) {
+        fetch('wishlist.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ designid: designid }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Show the modal with the response message
+            document.getElementById('modalMessage').innerText = data.message;
+            toggleModal();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            document.getElementById('modalMessage').innerText = 'An error occurred while adding to wishlist.';
+            toggleModal();
+        });
+    }
+    
+    function toggleModal() {
+        const overlay = document.getElementById('overlay');
+        overlay.style.display = overlay.style.display === 'none' ? 'flex' : 'none';
+    }
+
+
 });

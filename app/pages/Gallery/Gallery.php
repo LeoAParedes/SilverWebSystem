@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="wishlist.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <?php
 include_once("../../header.php");
@@ -34,9 +36,11 @@ $html = '
 <body>
 <section>
     <div class="text-white text-center masthead3">
-        <div class="container-xl text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
+    
+    <div class="container-xl text-center justify-content-center px-6 align-items-center align-content-center flex-fill container-gallery">
             <div id="myCarousel" class="carousel carousel-dark slide px-sm-4 px-md-6 px-lg-4" data-bs-ride="carousel">
-                <div class="carousel-inner">';
+                <div class="carousel-inner">
+                ';
 
 if ($stmt->rowCount() > 0) {
     $isFirstItem = true;
@@ -92,7 +96,8 @@ if ($stmt->rowCount() > 0) {
                             
                                         </div>
                                     <div>
-                                    <button class="btn btn-primary  rounded-5  align-content-right align-items-right">Wishlist</button>
+                                    <button class="btn btn-primary rounded-5 wishlist-button align-content-right align-items-right" 
+                                    data-designid="' . htmlspecialchars($designRow['designid']) . '" >Add to Wishlist</button>
                                     </div>
                             </div>
                             
@@ -208,10 +213,9 @@ echo $html; // Output all at once
 
 <!-- jQuery and Bootstrap Bundle (includes Popper) -->
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/../../app/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 

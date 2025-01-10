@@ -11729,9 +11729,38 @@ body {
 .t1{
 color: #fff;
 }
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.close-button {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
 
 .h1{
-  font-size: x-large;
+  font-size: large;
   max-width: 100%;
   margin:0pt 0pt 0pt 0pt;
   padding: 0pt;
@@ -11769,12 +11798,12 @@ color: #fff;
 
 .desc {
   font-size: 25pt; /* Description size */
-   /* Lighter text color */
+  
 }
 
 .details {
   font-size: 16pt; /* Description size */
-   /* Lighter text color */
+  
 }
 .pad{
   padding: 0pt;
