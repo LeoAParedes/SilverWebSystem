@@ -25,12 +25,15 @@ session_start();
             <div class="container">
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse my-3 " id="navbarSupportedContent">
                 <a class="navbar-brand" href="/../../index.php">Silver Web System</a>    
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     
                    
-                <li class='nav-item'>
+                
+
+                    <div class="align-content-end">
+                        <li class='nav-item'>
                     <a class='nav-link' href="#About"><h4>About</h4></a>
                 </li>
                 <li class='nav-item'>
@@ -62,6 +65,7 @@ session_start();
                             echo "<li class='nav-item'><button type='button' class='btn btn-primary'  id='loginBtn' role='button'>Log in</button></li>";
                         }                    ?>    
                     </ul>
+</div>
                 </div>
             </div>
         </nav>

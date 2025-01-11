@@ -9,9 +9,9 @@
        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
        <div class="d-flex justify-content-center"> 
        <div class="text-center" >
-                        <h1 class=" display-4 mx-auto my-0 text-uppercase"><br>Leonardo <br> Antonio <br>Paredes <br>Bobadilla</h1>
+                        <b class=" display-4  text-white t1 mx-auto my-0 text-uppercase"><br>Leonardo <br> Antonio <br>Paredes <br>Bobadilla</b>
                         <h2 class="text-white-50 mx-auto mt-4 mb-6">La mejor solucion para el desarrollo web</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
+                      
                     </div>
         </div>
     </div>

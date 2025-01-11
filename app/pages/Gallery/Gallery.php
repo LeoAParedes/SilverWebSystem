@@ -27,7 +27,7 @@ $html = '
     <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-center">
         <div class="d-flex justify-content-center"> 
             <div class="text-center">
-                <h1 class="display-4 mx-auto t1 my-0 text-uppercase">Explica otra dimensión</h1>
+                <b class="display-4 mx-auto t1 my-0 text-uppercase">Explica otra dimensión</b>
                 <h2 class="text-white-50 mx-auto mt-4 mb-6">La mejor solucion para el desarrollo web</h2>
             </div>
         </div>

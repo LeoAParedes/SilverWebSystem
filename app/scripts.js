@@ -61,70 +61,41 @@ $(document).ready(function() {
     $('#loginBtn').click(function(e) {
         e.preventDefault(); // Prevent default anchor click behavior
         $('#overlay').toggle(); // Show overlay
-        $('#SignupForm').toggle(); // Show Signup form
+        $('#LoginForm').toggle(); 
     });
     
     $('#editBtn').click(function(e) {
         e.preventDefault();
         $('#overlay').toggle();
-        $('#editForm').toggle(); // show Signup form
+        $('#editForm').toggle();
     });
 
     $('#createBtn').click(function(e) {
         e.preventDefault();
         $('#overlay').toggle();
-        $('#createForm').toggle(); // show Signup form
+        $('#createForm').toggle();
     });
 
     $('#registerLink').click(function(e) {
-        e.preventDefault(); // Prevent default anchor click behavior
-        // Show overlay
+        e.preventDefault();
         $('#SignupForm').toggle();
-        $('#LoginForm').toggle(); // Show Login form
+        $('#LoginForm').toggle();
     });
-
+    
     $('#registerLink2').click(function(e) {
-        e.preventDefault(); // Prevent default anchor click behavior
-        // Show overlay
+        e.preventDefault(); 
         $('#SignupForm').toggle();
-        $('#LoginForm').toggle(); // Show Login form
+        $('#LoginForm').toggle(); 
     });
 
     $('#overlay').click(function() {
         $(this).hide(); // Hide overlay
-        $('#SignupForm').hide(); // Hide Signup form
+        $('#SignupForm').hide(); 
         $('#LoginForm').hide();
         $('#createForm').hide();
         $('#editForm').hide();
     });
 
     
-
-    function addToWishlist(designid) {
-        fetch('wishlist.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ designid: designid }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Show the modal with the response message
-            document.getElementById('modalMessage').innerText = data.message;
-            toggleModal();
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-            document.getElementById('modalMessage').innerText = 'An error occurred while adding to wishlist.';
-            toggleModal();
-        });
-    }
-    
-    function toggleModal() {
-        const overlay = document.getElementById('overlay');
-        overlay.style.display = overlay.style.display === 'none' ? 'flex' : 'none';
-    }
-
 
 });

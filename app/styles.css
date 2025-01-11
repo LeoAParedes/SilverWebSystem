@@ -11728,6 +11728,7 @@ body {
 
 .t1{
 color: #fff;
+size: large;
 }
 .modal-overlay {
   display: none;
@@ -11941,7 +11942,17 @@ color: #fff;
   padding: 5rem 0;
 }
 
+@media (max-width: 576px) { /* xs */
+  .t1 {
+      font-size: 2.5rem; /* h4 size */
+  }
+}
 
+@media (min-width: 577px) { /* md and up */
+  .t1 {
+      font-size:6rem; /* h1 size */
+  }
+}
 
 
 /*# sourceMappingURL=styles.css.map */
