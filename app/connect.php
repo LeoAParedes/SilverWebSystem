@@ -2,8 +2,8 @@
 // Database connection details
 $host = 'localhost'; // Change if your database is hosted elsewhere
 $dbname = 'silverwebsystem'; // Replace with your database name
-$username = 'web'; // Replace with your database username
-$password = '24#foldpass'; // Replace with your database password
+$username = 'silverweb'; // Replace with your database username
+$password = 'goldenleon#'; // Replace with your database password
 
 try {
     // Create a new PDO instance
@@ -21,5 +21,9 @@ try {
     // Handle connection error
     echo "Connection failed: " . $e->getMessage();
 }
+$config = require __DIR__ . '/config/production.php';
+$GLOBALS['app_config'] = $config;
+
+
 ?>
 

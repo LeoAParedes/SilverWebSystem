@@ -1,0 +1,11 @@
+{
+    "name": "silverwebsystem/app",
+    "description": "Silver Web System Application",
+    "require": {
+        "tecnickcom/tcpdf": "^6.6"
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "optimize-autoloader": true
+    }
+}

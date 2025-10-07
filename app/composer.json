@@ -1,0 +1,11 @@
+{
+    "name": "silverwebsystem/app",
+    "description": "Silver Web System Application",
+    "require": {
+        "tecnickcom/tcpdf": "^6.10",
+        "stripe/stripe-php": "^17.6"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}

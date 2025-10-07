@@ -1,0 +1,15 @@
+{
+  "name": "silverwebsystem",
+  "version": "1.0.0",
+  "description": "SilverWebSystem with Golden Ratio Design",
+  "scripts": {
+    "build-css": "tailwindcss -i assets/css/input.css -o assets/css/output.css --minify",
+    "watch-css": "tailwindcss -i assets/css/input.css -o assets/css/output.css --watch",
+    "dev": "npm run watch-css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16"
+  }
+}
